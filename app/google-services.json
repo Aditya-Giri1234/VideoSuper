@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "347284101191",
+    "project_id": "videosuper-cc7c6",
+    "storage_bucket": "videosuper-cc7c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347284101191:android:2e36573505c7e129de7962",
+        "android_client_info": {
+          "package_name": "com.example.videosuper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347284101191-0jk4h6hesjk8vol9vao3udtr7riveh7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeSWzaLoolkjDtr4Zf_AeXS4tMOGxyIIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347284101191-0jk4h6hesjk8vol9vao3udtr7riveh7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VideoSuper</string>
+    <string-array name="dot">
+        <item>.</item>
+        <item>..</item>
+        <item>...</item>
+    </string-array>
+</resources>
