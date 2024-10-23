@@ -131,9 +131,6 @@ class VideoActivity : AppCompatActivity(),MainRepository.Listener {
 
     }
 
-
-
-
     override fun webRtcConnected() {
         Log.e("check", "VideoActivity - webRtcConnected ")
         CoroutineScope(Dispatchers.Main).launch {

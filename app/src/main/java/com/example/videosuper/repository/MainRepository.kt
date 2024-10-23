@@ -169,6 +169,7 @@ class MainRepository:WebRtcClient.Listener {
     fun initWeb(context:Context,username: String){
         if(webRtcClient==null){
             webRtcClient= WebRtcClient(context,object :MyPeerConnection(){
+
                 override fun onAddStream(p0: MediaStream?) {
                     super.onAddStream(p0)
                     Log.e("check","main repo - init - webRtc initialize constructor - onAddStream - $p0")
