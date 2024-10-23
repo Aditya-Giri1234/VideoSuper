@@ -9,9 +9,28 @@ VideoSuper is a demo showcasing the WebRTC video feature. It allows peer-to-peer
 
 ## Prerequisites
 
-Before running the project, ensure that you have:
+Before running the project, ensure that you:
 
-- A Firebase account with a Realtime Database enabled.
+- **Create a project in Firebase**:
+  - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+  - Add an Android app to your Firebase project.
+  - Download the `google-services.json` file and place it in your project's `app/` directory.
+  
+- **Enable Realtime Database**:
+  - In the Firebase Console, navigate to **Realtime Database**.
+  - Click **Create Database** and follow the prompts to enable it.
+  - Set the database rules to allow read/write access during testing:
+
+    ```json
+    {
+      "rules": {
+        ".read": "true",
+        ".write": "true"
+      }
+    }
+    ```
+
+    > **Note**: For production, make sure to secure your database rules appropriately.
 
 ## Getting Started
 
