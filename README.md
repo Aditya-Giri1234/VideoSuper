@@ -1,26 +1,31 @@
-# VideoSuper
+# VideoSuper - Real-Time WebRTC Video Chat
 
-VideoSuper is a demo showcasing the WebRTC video feature. It allows peer-to-peer video communication using WebRTC, with Firebase serving as the signaling server.
+**VideoSuper** is a demo Android app that showcases peer-to-peer video communication using WebRTC, with Firebase Realtime Database used for signaling. This app allows users to connect through video calls, providing a simple yet functional demonstration of real-time communication on mobile devices.
 
 ## Features
 
-- Real-time video communication using WebRTC.
-- Firebase Realtime Database is used for signaling and establishing WebRTC connections.
+- **Peer-to-Peer Video Communication**: Establish secure video calls between users using WebRTC.
+- **Firebase Realtime Database**: Firebase is used for signaling and managing connections between peers.
+- **User Authentication**: Firebase Authentication to securely handle user sign-ins.
+- **Incoming Call Notifications**: Alerts users of incoming calls with ringtones.
+- **Permissions Management**: Requests necessary permissions (camera, microphone, etc.) via PermissionX.
+- **Minimalist UI**: A clean, simple UI for seamless video communication.
 
 ## Prerequisites
 
-Before running the project, ensure that you:
+Before running the project, follow these steps to configure the Firebase project and dependencies.
 
-- **Create a project in Firebase**:
+### 1. Firebase Project Setup
+
+- **Create a Firebase Project**:
   - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
   - Add an Android app to your Firebase project.
-  - Download the `google-services.json` file and place it in your project's `app/` directory.
-  
-- **Enable Realtime Database**:
-  - In the Firebase Console, navigate to **Realtime Database**.
-  - Click **Create Database** and follow the prompts to enable it.
-  - Set the database rules to allow read/write access during testing:
+  - Download the `google-services.json` file and place it in the `app/` directory of your project.
 
+- **Enable Firebase Realtime Database**:
+  - In the Firebase Console, navigate to **Realtime Database** and click on **Create Database**.
+  - Set the rules for development to allow read and write access:
+  
     ```json
     {
       "rules": {
@@ -29,12 +34,19 @@ Before running the project, ensure that you:
       }
     }
     ```
+    
+    **Important**: Update these rules for production by securing your data access appropriately.
 
-    > **Note**: For production, make sure to secure your database rules appropriately.
+- **Enable Firebase Authentication**:
+  - In the Firebase Console, enable **Email/Password Authentication** or choose other authentication methods if required for your app.
 
-## Getting Started
+### 2. WebRTC Setup
 
-### 1. Clone the repository
+This project uses WebRTC for establishing video communication. Ensure that WebRTC dependencies are correctly included in your `build.gradle` files.
+
+### 3. Clone the Repository
+
+To get started, clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/your-username/VideoSuper.git
