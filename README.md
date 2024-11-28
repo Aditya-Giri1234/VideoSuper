@@ -7,7 +7,7 @@
 - **Peer-to-Peer Video Communication**: Establish secure video calls between users using WebRTC.
 - **Firebase Realtime Database**: Firebase is used for signaling and managing connections between peers.
 - **User Authentication**: Firebase Authentication to securely handle user sign-ins.
-- **Incoming Call Notifications**: Alerts users of incoming calls with ringtones.
+- **Incoming Call Notifications**: Alerts users of incoming calls with ringtones in the app.
 - **Permissions Management**: Requests necessary permissions (camera, microphone, etc.) via PermissionX.
 - **Minimalist UI**: A clean, simple UI for seamless video communication.
 
